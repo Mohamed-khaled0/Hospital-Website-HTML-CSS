@@ -50,10 +50,37 @@ html {
 .btn-secondary {
   background-color: var(--dark-gray);
   color: white;
-}
-.btn-secondary:hover {
   transition: 0.3s;
+}
+
+.btn-secondary:hover {
   background-color: #4c4f6e;
+
+}
+
+.btn-third{
+    transition: 0.3s;
+    background-color: white;
+    color: var(--light-blue);
+    border: 1px solid white;
+}
+.btn-third:hover{
+    background-color: var(--light-blue);
+    color:white ;
+    border: 1px solid var(--light-blue);
+}
+
+.btn-forth{
+    transition: 0.3s;
+    background-color:transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-forth:hover{
+    background-color: white;
+    color:var(--dark-gray);
+    border: 1px solid white;
 }
 
 .title {
@@ -237,7 +264,8 @@ p {
   color: wheat;
 }
 
-.info::before {
+.info::before ,
+.call::before{
   content: "";
   position: absolute;
   background-color: var(--light-blue);
@@ -301,6 +329,11 @@ p {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 50%;
+    transition: 0.3s;
+}
+.help .row .col i:hover{
+    border: 1px solid var(--light-blue);
+
 }
 
 .help .row .col h3{
@@ -315,6 +348,36 @@ p {
     width: 120px;
     right: -75px;
     top: 35px;
-
 }
+
 /* Help  End */
+/* Call  Start */
+.call{
+    background: url('/images/call-bg.jpg') center center/cover no-repeat;
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.call .call-content{
+    width: 600px;
+    margin: auto;
+}
+
+.call .call-content h2{
+    font-size: 30px;
+    color: white;
+}
+.call .call-content p{
+    font-size: 16px;
+    color: white;
+    margin: 25px 0;
+}
+
+.call .call-content a {
+    margin-right: 20px;
+}
+
+
+/* Call  End */
