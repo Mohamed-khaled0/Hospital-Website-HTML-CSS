@@ -55,32 +55,31 @@ html {
 
 .btn-secondary:hover {
   background-color: #4c4f6e;
-
 }
 
-.btn-third{
-    transition: 0.3s;
-    background-color: white;
-    color: var(--light-blue);
-    border: 1px solid white;
+.btn-third {
+  transition: 0.3s;
+  background-color: white;
+  color: var(--light-blue);
+  border: 1px solid white;
 }
-.btn-third:hover{
-    background-color: var(--light-blue);
-    color:white ;
-    border: 1px solid var(--light-blue);
-}
-
-.btn-forth{
-    transition: 0.3s;
-    background-color:transparent;
-    color: white;
-    border: 1px solid white;
+.btn-third:hover {
+  background-color: var(--light-blue);
+  color: white;
+  border: 1px solid var(--light-blue);
 }
 
-.btn-forth:hover{
-    background-color: white;
-    color:var(--dark-gray);
-    border: 1px solid white;
+.btn-forth {
+  transition: 0.3s;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-forth:hover {
+  background-color: white;
+  color: var(--dark-gray);
+  border: 1px solid white;
 }
 
 .title {
@@ -133,6 +132,7 @@ p {
   top: 0;
   width: 100%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
 }
 
 .logo {
@@ -207,8 +207,9 @@ p {
   padding: 0 2rem;
 }
 
-.about ,
-.help{
+.about,
+.help,
+.services {
   padding: 4rem 0;
 }
 
@@ -264,8 +265,8 @@ p {
   color: wheat;
 }
 
-.info::before ,
-.call::before{
+.info::before,
+.call::before {
   content: "";
   position: absolute;
   background-color: var(--light-blue);
@@ -312,72 +313,94 @@ p {
 /* Info End */
 
 /* Help Start */
-.help .row{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 3rem;
-    margin-top: 3rem;
-    text-align: center;
+.help .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  margin-top: 3rem;
+  text-align: center;
 }
 .help .row .col {
-    position: relative;
+  position: relative;
 }
 
 .help .row .col i {
-    color: var(--light-blue);
-    font-size: 30px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    transition: 0.3s;
+  color: var(--light-blue);
+  font-size: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: 0.3s;
 }
-.help .row .col i:hover{
-    border: 1px solid var(--light-blue);
-
+.help .row .col i:hover {
+  border: 1px solid var(--light-blue);
 }
 
-.help .row .col h3{
-    margin: 20px 0;
+.help .row .col h3 {
+  margin: 20px 0;
 }
 
 .help .row .col:first-child::before,
-.help .row .col:nth-child(2)::before{
-    content: '';
-    border-bottom: 3px dotted var(--light-blue);
-    position: absolute;
-    width: 120px;
-    right: -75px;
-    top: 35px;
+.help .row .col:nth-child(2)::before {
+  content: "";
+  border-bottom: 3px dotted var(--light-blue);
+  position: absolute;
+  width: 120px;
+  right: -75px;
+  top: 35px;
 }
 
 /* Help  End */
 /* Call  Start */
-.call{
-    background: url('/images/call-bg.jpg') center center/cover no-repeat;
-    padding: 6rem 0;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+.call {
+  background: url("/images/call-bg.jpg") center center/cover no-repeat;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
-.call .call-content{
-    width: 600px;
-    margin: auto;
+.call .call-content {
+  width: 600px;
+  margin: auto;
 }
 
-.call .call-content h2{
-    font-size: 30px;
-    color: white;
+.call .call-content h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: white;
 }
-.call .call-content p{
-    font-size: 16px;
-    color: white;
-    margin: 25px 0;
+.call .call-content p {
+  font-size: 16px;
+  color: white;
+  margin: 25px 0;
 }
 
 .call .call-content a {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-
 /* Call  End */
+
+/* Services  Start */
+.services .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 3rem;
+  margin-top: 5rem;
+}
+
+.services .row .item {
+  display: flex;
+}
+.services .row .item i {
+  font-size: 30px;
+  color: var(--light-blue);
+  margin-right: 20px;
+}
+.services .row .item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Services  End */
