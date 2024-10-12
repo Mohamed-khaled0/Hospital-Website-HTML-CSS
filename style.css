@@ -58,6 +58,29 @@ body {
     background-color: #4c4f6e;
 }
 
+.title{
+    text-align: center;
+
+}
+.title h2{
+    font-size: 32px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.title img{
+
+    margin: 20px 0;
+}
+.title p{
+    max-width: 500px;
+    font-size: 16px;
+    margin: auto;
+}
+
+
+
+
 ul {
   list-style: none;
 }
@@ -158,4 +181,58 @@ p {
     margin-right: 15px;
 
 }
-/* Home End */
+
+
+/* About Start */
+.container{
+    max-width: 1200px ;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.about{
+    padding: 6rem 0;
+}
+
+.about .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+.about .row img{
+    width: 100%;
+}
+
+.about .row .col h3{
+    font-size: 24px;
+}
+
+.about .row .col hr{
+    width: 60px;
+    height: 3px;
+    background-color: var(--light-blue);
+    border: none;
+    margin: 10px 0;
+}
+
+.about .row .col p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.about .row .col .list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.about .row .col .list li{
+    margin-bottom: 5px;
+    color: var(--light-gray);
+}
+.about .row .col .list li i {
+    color: var(--light-blue);
+    margin-right: 5px;
+}
+
+/* About End */
