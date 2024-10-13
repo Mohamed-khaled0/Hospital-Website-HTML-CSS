@@ -257,7 +257,8 @@ p {
 /* About End */
 
 /* Info Start */
-.info {
+.info,
+.brand {
   background: url("./images/info-bg.jpg") no-repeat center center/cover;
   padding: 6rem 0;
   position: relative;
@@ -266,7 +267,8 @@ p {
 }
 
 .info::before,
-.call::before {
+.call::before,
+.brand::before {
   content: "";
   position: absolute;
   background-color: var(--light-blue);
@@ -404,70 +406,85 @@ p {
 }
 /* Services  End */
 /* Price list  Start */
-.price-list{
-    background: var(--bg-white);
-    padding: 4rem;
+.price-list {
+  background: var(--bg-white);
+  padding: 4rem;
 }
-.price-list .row{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 2rem;
-    margin-top: 5rem;
+.price-list .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  margin-top: 5rem;
 }
-.price-list .row .col{
-    background-color: white;
-    border-radius: 5px;
-    padding: 3rem 2rem;
-    border: 1px solid #ddd;
-}
-
-.price-list .row .col .price-details{
-    text-align: center;
-}
-.price-list .row .col .price-details i{
-font-size: 50px;
-color: var(--light-blue);
+.price-list .row .col {
+  background-color: white;
+  border-radius: 5px;
+  padding: 3rem 2rem;
+  border: 1px solid #ddd;
 }
 
-.price-list .row .col .price-details h3{
-font-size: 24px;
-margin-top: 2rem;
-font-weight: 500;
+.price-list .row .col .price-details {
+  text-align: center;
+}
+.price-list .row .col .price-details i {
+  font-size: 50px;
+  color: var(--light-blue);
+}
+
+.price-list .row .col .price-details h3 {
+  font-size: 24px;
+  margin-top: 2rem;
+  font-weight: 500;
 }
 
 .price-list .row .col .price-details p {
-font-size: 30px;
-font-weight: 600;
-color: var(--light-blue);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--light-blue);
 }
 
-
-.price-list .row .col .price-details p span{
-font-size: 18px;
-color: var(--light-gray);
-font-weight: 300;
+.price-list .row .col .price-details p span {
+  font-size: 18px;
+  color: var(--light-gray);
+  font-weight: 300;
 }
-.price-list .row .col  ul {
-    margin-top: 2rem;
-
+.price-list .row .col ul {
+  margin-top: 2rem;
 }
 
-.price-list .row .col  ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px 0;
-    color: var(--light-gray);
+.price-list .row .col ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  color: var(--light-gray);
 }
 
-.price-list .row .col  ul li i.fa-circle-check {
-color: var(--light-blue);
+.price-list .row .col ul li i.fa-circle-check {
+  color: var(--light-blue);
 }
 
 .price-list .row .col a {
-    width: 100%;
-    margin-top: 25px;
-    text-align: center;
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
 }
 
 /* Price list  End */
+
+/* Brand Start */
+.brand .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brand .row img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Brand End */
+
+/* Doctors Start */
+/* Doctors End */
