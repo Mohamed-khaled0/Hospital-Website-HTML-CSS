@@ -408,7 +408,8 @@ p {
 /* Services  End */
 /* Price list  Start */
 .price-list,
-.doctors {
+.doctors,
+.contact {
   background: var(--bg-white);
   padding: 4rem;
 }
@@ -567,3 +568,42 @@ font-weight: bold;
 }
 
 /* Blogs End */
+
+/* Contact Start */
+.contact .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.contact .row img{
+    justify-self: end;
+    max-width: 100%;
+}
+.contact .row .form-control{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1.5rem;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.contact .row .form-control input ,
+.contact .row .form-control select,
+.contact .row  textarea {
+    padding: 15px;
+    width: 100%;
+    color: var(--light-gray);
+    outline-color: var(--light-blue);
+    border: 1px solid #ddd;
+    }
+
+    .contact .btn {
+        padding: 15px 30px;
+        margin-top: 20px;
+        border: none;
+    }
+
+/* Contact End */
