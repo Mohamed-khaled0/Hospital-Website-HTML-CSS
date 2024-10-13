@@ -290,7 +290,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.7s;
 }
 
 .info .row .col:hover i,
@@ -304,6 +303,8 @@ p {
   border: 2px solid white;
   border-radius: 50%;
   margin-right: 20px;
+  transition: all 0.4s ease;
+
 }
 
 .info .row .col span {
@@ -526,7 +527,8 @@ p {
   column-gap: 2rem;
   margin-top: 2rem;
 }
-.blogs .row .col {
+.blogs .row .col,
+.doctors .row .item {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -760,7 +762,106 @@ background-color: #135fa1;
     font-weight: bold;
     color: white;
 }
-
-
-
 /* Footer End */
+
+
+/* Responsive Start */
+@media (max-width:800px) {
+    .logo{
+        width: 100px;
+    }
+
+    .home .navbar nav ul a{
+        margin: 0 5px;
+    }
+
+    .about .row ,
+    .help .row,
+    .contact .row,
+    .newsletter .row {
+        grid-template-columns:  1fr;
+        row-gap: 3rem;
+    }
+
+    .help .row .col:first-child::before,
+    .help .row .col:nth-child(2)::before{
+    display: none;
+}
+
+.info .row ,
+.services .row,
+.price-list .row,
+.doctors .row ,
+.blogs .row,
+.footer-top .row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+}
+
+.contact .row img {
+    width: 100%;
+    order: 1;
+}
+.contact .row form {
+    order: 2;
+};
+
+}
+
+
+@media (max-width:650px) {
+    .home .navbar nav{
+        flex-direction: column;
+        padding: 10px 0;
+    
+    }
+    .home .home-content .col h1 {
+        font-size: 26px;
+    }
+    .home .home-content .col a{
+        margin-bottom: 10px;
+    }
+
+    .info .row{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .info .row .col  {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info .row .col i {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .services .row,
+    .price-list .row ,
+    .doctors .row ,
+    .blogs .row,
+    .footer .footer-top .row{
+        grid-template-columns: 1fr;
+    }
+
+    .footer .footer-top {
+        padding: 1rem;
+    }
+
+.title h2 ,
+.call .call-content h2{
+    font-size: 22px;
+}
+
+.call .call-content h2,
+.call .call-content p{
+    width: 80%;
+}
+
+
+
+
+}
+
+/* Responsive End */
