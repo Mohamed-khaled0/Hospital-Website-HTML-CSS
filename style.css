@@ -607,3 +607,43 @@ font-weight: bold;
     }
 
 /* Contact End */
+
+/* Newsletter Start */
+
+.newsletter{
+    padding: 5rem 0;
+    background: var(--bg-newsletter);
+}
+
+
+.newsletter .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3rem;
+}
+
+.newsletter .row .col h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter .row form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.newsletter .row form input,
+.newsletter .row form button{
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 5px;
+outline: none;
+border: 1px solid var(--light-blue);
+}
+
+
+
+/* Newsletter End */
