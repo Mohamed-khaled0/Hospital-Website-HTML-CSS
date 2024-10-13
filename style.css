@@ -406,7 +406,8 @@ p {
 }
 /* Services  End */
 /* Price list  Start */
-.price-list {
+.price-list,
+.doctors {
   background: var(--bg-white);
   padding: 4rem;
 }
@@ -487,4 +488,33 @@ p {
 /* Brand End */
 
 /* Doctors Start */
+.doctors .row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 3rem;
+    column-gap: 3rem;
+    text-align: center;
+}
+
+.doctors .row .item {
+    background-color: white;
+}
+.doctors .row .item img{
+    width: 100%;
+    height: 300px;
+}
+
+
+.doctors .row .item  .item-details {
+    padding: 2rem 0;
+
+}
+.doctors .row .item  .item-details  h3{
+font-size: 20px;
+}
+.doctors .row .item  .item-details p {
+margin: 8px 0 20px;
+color: var(--light-blue);
+font-weight: bold;
+}
 /* Doctors End */
