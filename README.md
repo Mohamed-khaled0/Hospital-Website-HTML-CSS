@@ -8,7 +8,7 @@ This is a static website created using **HTML** and **CSS** for MedStar Hospital
 - [Technologies Used](#technologies-used)
 
 ## Demo
-You can view the live demo of the website [here](https://mohamed-khaled0.github.io/Hospital-Website-HTML-CSS/).
+You can view the  demo of the website .
 Youtube  [here](https://youtu.be/SpVjXyYTbqs).
 
 ## Features
